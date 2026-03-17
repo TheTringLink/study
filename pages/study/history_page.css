@@ -1,0 +1,300 @@
+/* 全局样式 */
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            position: relative;
+        }
+        
+        /* 新内容提示词 */
+        #new {
+            background-color: #8b4d4d;
+            color: #56b74d;
+            font-size: 5px;
+            margin: 0 0;
+        }
+        
+        /* 页脚固定样式（核心） */
+        #footer {
+            background-color: #ffa60000;
+            text-align: center;
+            /* 固定定位：脱离文档流，固定在视口 */
+            position: fixed;
+            /* 定位到页面底部 */
+            bottom: 0;
+            font-size: 10px;
+            color: #797a7b;
+            /* 宽度铺满整个页面 */
+            width: 100%;
+            /* 给页脚设置高度，避免内容挤压 */
+            height: 40px;
+            /* 文字垂直居中 */
+            line-height: 50px;
+            /* 层级设置，避免被其他元素遮挡 */
+            z-index: 0;
+        }
+        
+        
+
+        /* 白色覆盖层 - 默认隐藏 */
+        .white-bg-overlay {
+            position: fixed; /* 固定覆盖整个视口 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff; /* 白色背景 */
+            z-index: -1; /* 覆盖在图片背景上(负数也是可以滴) */
+            display: none; /* 默认隐藏 */
+        }
+
+        /* 背景切换按钮 - 右上角固定 */
+        .bg-toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 24px; /* 调整"◑"的大小 */
+            color: #333; /* 按钮文字颜色 */
+            background-color: rgba(255, 255, 255, 0); /* 按钮半透背景 */
+            border: none;
+            border-radius: 50%; /* 圆形按钮 */
+            cursor: pointer;
+            z-index: 10; /* 按钮始终在最上层 */
+            transition: all 0.2s ease; /* 点击动画 */
+        }
+
+        /* 按钮放大效果 */
+        .bg-toggle-btn:hover {
+            background-color: rgba(255, 255, 255, 0);
+            transform: scale(1.2);
+        }
+
+        /* 下载区域样式 - 毛玻璃效果 */
+        .download-section {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 999; /* 确保按钮在最上层 */
+            width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        /* 下载区域标题栏（可折叠） */
+        .download-title {
+            padding: 10px 15px;
+            background-color: #f8f9fa; /* 浅灰色 */
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* 下载区域内容 */
+        .download-content {
+            padding: 15px;
+            background-color: #ffffff;
+            display: block;
+        }
+
+        /* 下载链接样式 - 灰白色系 */
+        .download-link {
+            display: block;
+            font-size: 16px;
+            text-decoration: none;
+            color: #495057; /* 深灰色 */
+            padding: 8px 10px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            background-color: #e9ecef; /* 淡灰色 */
+            transition: all 0.2s ease;
+        }
+        .download-link:hover {
+            background-color: #dee2e6; /* hover深一点的灰色 */
+            color: #212529;
+            text-decoration: none;
+            transform: translateX(2px);
+        }
+        .download-link:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 箭头图标样式 */
+        .toggle-icon {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            display: inline-block; 
+            color: #6c757d;
+        }
+        .toggle-icon.rotated {
+            transform: rotate(90deg);
+        }
+
+        /* 顶部导航栏样式 */
+        .nav-header {
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            backdrop-filter: blur(20px);
+            background-color: rgba(95, 95, 95, 0.283);
+            border-radius: 8px;
+            padding: 0;
+            /* 给导航栏留出下载按钮的空间 */
+            margin-top: 80px;
+        }
+        .nav-tabs {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        .nav-tabs .nav-link {
+            color: rgb(249, 249, 249);
+            border: none;
+            border-radius: 1;
+            padding: 12px 30px;
+            font-weight: bold;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #ffffff00;
+            color: rgb(147, 142, 142);
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #4950573f;
+            color: rgb(0, 0, 0);
+        }
+
+        /* 内容容器 */
+        .content-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 标题样式 */
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        /* 题目容器样式 */
+        .question-container {
+            margin: 20px 0;
+            border: 1px solid #dddddd;
+            backdrop-filter: blur(20px); 
+            background-color: rgba(225, 225, 225, 0.283);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* 通用题目标题栏样式 */
+        .question-title {
+            padding: 15px 20px;
+            background-color: #f8f9fa;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+        }
+
+        /* 测验1的标题栏（可点击） */
+        .q1-title {
+            cursor: pointer;
+        }
+
+        /* 测验2的标题栏子样式 */
+        .q2-title {
+            cursor: default;
+        }
+
+        .title-text {
+            flex: 1;
+        }
+
+        /* 测验2版本切换按钮 */
+        .version-switch-btn {
+            padding: 2px 8px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .version-switch-btn:hover {
+            background-color: #5c636a;
+        }
+
+        /* 题目内容区域 */
+        .question-content {
+            padding: 20px;
+            display: block;
+        }
+
+        /* 测验2的原版内容容器 */
+        .original-content {
+            display: none;
+        }
+
+        /* 表格样式 */
+        table {
+            margin: 20px 0;
+            width: 100%;
+        }
+        th, td {
+            vertical-align: top;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        /* 内容面板隐藏样式 */
+        .content-panel {
+            display: none;
+        }
+        .content-panel.active {
+            display: block;
+        }
+        .download-content {
+            display: none;
+        }
+        .download-title .toggle-icon {
+            transform: rotate(0deg);
+        }
+
+        a:link {
+            color: rgb(150, 150, 150);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: rgb(181, 203, 170);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(91, 91, 91);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
