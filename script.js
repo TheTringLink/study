@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (video) {
                 if (video.paused) {
                     video.play();
-                    toggleIcon.innerText = '∷';
+                    toggleIcon.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
                 } else {
                     video.pause();
-                    toggleIcon.innerText = '◇';
+                    toggleIcon.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
                 }
             }
 
