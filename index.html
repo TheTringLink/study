@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温习平台</title>
+    <link rel="shortcut icon" href="./icon/2024478qfgxq2i28csbldq.png.icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 左上角資訊模組 -->
+    <div id="info-module" class="glass-info">
+        <!-- 點擊展開/收縮的按鈕 -->
+        <button id="info-toggle-btn" class="info-toggle-btn" title="公告資訊">
+            <img src="./IMG_3879.png">
+        </button>
+        
+        <!-- 內容區域 -->
+        <div class="info-content">
+            <h3>📢 最新更新與公告</h3>
+            <p>1. 目前仅支持 历史_问答 其余将在后续更新中增加<br>
+               2. 历史_问答 已更新，请进入查看<br>
+                <br>
+               TIPS: 主页面右下角可暂停页面背景动画<br>
+               TIPS: 内容页面右上角可切换纯色背景<br> 
+            </p>
+        </div>
+    </div>
+
+    <!-- 滿版背景影片 -->
+    <!-- autoplay: 自動播放, loop: 循環播放, muted: 靜音(自動播放的必要條件), playsinline: 支援iOS不全螢幕播放 -->
+    <video class="bg-video" autoplay loop muted playsinline id="bgVideo">
+        <!-- 這裡請將 'your-video.mp4' 替換成你的影片檔案路徑 -->
+        <source src="./123456789.mp4" type="video/mp4">
+        您的瀏覽器不支援 HTML5 影片。
+    </video>
+    <button id="video-toggle" class="video-control" title="暫停/播放背景">
+        <span id="toggle-icon">∷</span>
+    </button>
+
+    <div id="footer">
+        <p>本网站仅为个人学习、展示使用，不用于商业用途。如有侵权，请联系删除。 suggest@thetring.link</p>
+    </div>
+
+    <div class="glass-container">
+        <div class="input-group">
+            <label>選擇科目</label>
+            <div class="custom-select" id="subject-dropdown">
+                <div class="select-selected">选择</div>
+                <div class="select-items select-hide">
+                    <div data-value="chinese">语文</div>
+                    <div data-value="english">英文</div>
+                    <div data-value="math">數學</div>
+                    <div data-value="history">历史</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>選擇學習內容</label>
+            <div class="custom-select" id="content-dropdown">
+                <div class="select-selected">选择</div>
+                <div class="select-items select-hide">
+                    <div data-value="Q&A">问答</div>
+                    <div data-value="more">更多学习资料</div>
+                </div>
+            </div>
+        </div>
+
+        <button id="start-btn" class="start-btn">前往页面</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
