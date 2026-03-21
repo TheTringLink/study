@@ -336,8 +336,9 @@ body {
         <!-- 內容區域 -->
         <div class="info-content">
             <h3>📢 最新更新與公告</h3>
-            <p>1. 目前仅支持 历史_问答 其余将在后续更新中增加<br>
+            <p>1. 目前仅支持 ，中文/历史_问答 其余将在后续更新中增加<br>
                2. 历史_问答 已更新，请进入查看<br>
+               3. 中文_问答 已更新，请进入查看<br>
                 <br>
                TIPS: 主页面右下角可暂停页面背景动画<br>
                TIPS: 内容页面右上角可切换纯色背景<br> 
@@ -528,7 +529,7 @@ body {
     /* 方法 B：使用對照表 (適合選項非常多時，比較好維護)*/
     const routeMap = {
         'history_Q&A': './study/history.html',
-        'chinese_ch2': 'page2.html',
+        'chinese_Q&A': './chinese/chinese.html',
     };
     const key = `${sub}_${cont}`;
     targetUrl = routeMap[key] || './black_page/no_page.html'; 
