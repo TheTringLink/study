@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isWhite = false;
     toggleBtn.addEventListener('click', () => {
         isWhite = !isWhite;
-        overlay.style.display = isWhite ? 'block' : 'none';
+        overlay.style.display = isWhite ? 'none' : 'block';
     });
 
     // --- 2. 主頁 Logo 跳轉 ---
