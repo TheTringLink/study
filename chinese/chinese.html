@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文测验问答</title>
+    <link rel="shortcut icon" href="./icon/2024478qfgxq2i28csbldq.png.icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="chinese_css.css">
+</head>
+<body class="custom-bg">
+
+    <div class="white-bg-overlay"></div>
+
+    <!-- 頂部導覽列 -->
+    <nav class="top-nav unselectable">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-pill active" data-target="quiz2" data-title="中文考试问答">
+                    <span class="dot"></span> 中文问答(考试)
+                </div>
+                <div class="nav-pill" data-target="quiz3" data-title="中文问答(一)">
+                    <span class="dot"></span> 中文问答(一)
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-dropdown" id="downloadDropdown">
+                    <div class="dropdown-trigger">📥 下載中心 <span class="arrow">▽</span></div>
+                    <div class="dropdown-content collapse-animate" id="downloadContent">
+                        <div class="inner-dropdown">
+                            <a href="./chinese/chinese.docx" download>📄 中文考試問答範圍.docx</a>
+                            <a href="./chinese/chinese.pdf" download>📄 中文考試問答範圍.pdf</a>
+                            <a href="https://thetringlink.lanzouk.com/b00y9t75ij" target="_blank">🔗 其他資源</a>
+                        </div>
+                    </div>
+            </div>
+                <button class="nav-icon-btn bg-toggle-btn" title="切换背景">◑</button>
+                <!-- 導覽列最右邊的入口 -->
+                    <div class="home-logo-placeholder" id="homeLogo" title="跳轉主頁">
+                <!-- 將 src 換成你的圖片路徑，例如 ./icon/home.png -->
+                    <img src="./icon/13215646.png" alt="Home">
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main-content-wrapper">
+        <div class="content-container">
+            <h1 class="main-title text-center fw-bold" id="pageTitle">中文考试问答</h1>
+
+            <!-- 測驗二面板 -->
+            <div class="content-panel active" id="quiz2-panel">
+                
+                <!-- 題目1：簡單灰邊捆邊 -->
+                <div class="question-card">
+                    <div class="q-header" data-collapse="q2-1">
+                        <span class="title-text">《歸去來兮辭》一文表現了作者什麼樣的人生態度？</span>
+                        <div class="controls">
+                            <button class="btn-switch unselectable" data-switch="q2-1">切換原版</button>
+                            <span class="toggle-icon rotated">￴</span>
+                        </div>
+                    </div>
+                    <!-- 預設展開 (show) -->
+                    <div id="q2-1-content" class="q-body-collapse collapse-animate show">
+                        <div class="inner-content">
+                            <div class="simple-content">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        1.淡泊名利，不求富貴:作者認為世間渾濁則勿與與同流，只要自由自在地生活，就算物質條件不好，日子也過得愉快。</br>
+                                        2.喜愛自然，熱愛田園:出仕只為解決生活，現既厭倦住仕途，理應歸隱，過簡樸的田園生活。</br>
+                                        3.順應自然，樂知天命:作者認為樂天知命，沒有絲堂毫疑意慮的生活，以盡天年的思想是最佳的做法。</br>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="original-content" style="display:none;">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        1.淡泊名利，不求富貴:作者認為世間渾濁則勿與與同流，只要自由自在地生活，就算物質條件不好，日子也過得愉快。</br>
+                                        2.喜愛自然，熱愛田園:出仕只為解決生活，與作者“質性自然的本質不符。現既厭倦住仕途，理應歸隱，過簡樸的田園生活。</br>
+                                        3.順應自然，樂知天命:作者認為樂天知命，沒有絲堂毫疑意慮的生活，以盡天年的思想是最佳的做法。</br>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 題目2：簡單灰邊捆邊 -->
+                <div class="question-card">
+                    <div class="q-header" data-collapse="q2-2">
+                        <span class="title-text">作者寫作《六國論》，目的在於借古諷今。作者借“古”的什麼事？諷“今”的什麼事？“古”和“今”的情況有何相同和相異的地方？</span>
+                        <div class="controls">
+                            <button class="btn-switch unselectable" data-switch="q2-2">切換原版</button>
+                            <span class="toggle-icon rotated">￴</span>
+                        </div>
+                    </div>
+                    <div id="q2-2-content" class="q-body-collapse collapse-animate show">
+                        <div class="inner-content">
+                            <div class="simple-content">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        作者借六国割地赂秦而亡的史事，讽谏北宋朝廷对契丹、西夏求和、输纳银绢的政策。双方因畏惧强敌积威，企图以割地或纳贡换取苟安，最终都面临亡国危机；不同之处在于，六国本弱，却仍有取胜的可能，北宋作为大国却向小国求和，反不如六国。
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="original-content" style="display:none;">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        作者借戰國時代六國因割地討好秦國而招致滅亡的史事，諷刺當時北宋對契丹和西夏輸納銀絹、屈辱求和的外交政策。</br>
+                                        古今相同的地方:六國懾於秦國的積威，為求自保而割地討好秦國；而北宋則懾於西夏、契丹的積威。輸納銀絹以求苟安，最後六國和北宋都面臨亡國的危機。</br> 
+                                        古今不同的地方:作者認為六國與秦國同是諸侯國，六國的實力弱，但仍然有不割地而戰勝的形勢；北宋是大國，卻向西夏等小國求和，那就連六國都不如了。</br>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 題目3：簡單灰邊捆邊 -->
+                <div class="question-card">
+                    <div class="q-header" data-collapse="q2-3">
+                        <span class="title-text">《我看大明湖》雖為記敘文，但卻兼有議論、描寫、說明、抒情的成份，試析述之。</span>
+                        <div class="controls">
+                            <button class="btn-switch unselectable" data-switch="q2-3">切換原版</button>
+                            <span class="toggle-icon rotated">￴</span>
+                        </div>
+                    </div>
+                    <div id="q2-3-content" class="q-body-collapse collapse-animate show">
+                        <div class="inner-content">
+                            <div class="simple-content">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        《我看大明湖》為記敘文，兼具多種表達方式：首二段以正反論證斷言大明湖風光如昔，並穿插描寫；第三至五段說明大明湖的安靜樸素、含蓄有用；末段則抒發愛慕之情，歌頌山東人及中華民族。
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="original-content" style="display:none;">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        本文寫法多變，如第一、二段，通過正反論証，論斷大明湖風光如昔，並夾雜描寫了大明湖的風景。第三、四、五段，借介紹大明湖的古物文獻，及它和中國其他湖泊比較，說明大明湖是安靜樸素、含蓄、有用處的地方。第六段則抒發自己對大明湖愛慕之情，進而歌頌山東人和中華民族。
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 題目4：簡單灰邊捆邊 -->
+                <div class="question-card">
+                    <div class="q-header" data-collapse="q2-4">
+                        <span class="title-text">文章最後一句「春光似海，盛世如花。」是什麼意思？和文章的主旨有什麼關係？表達了作者怎樣的思想感情？</span>
+                        <div class="controls">
+                            <button class="btn-switch unselectable" data-switch="q2-4">切換原版</button>
+                            <span class="toggle-icon rotated">￴</span>
+                        </div>
+                    </div>
+                    <div id="q2-4-content" class="q-body-collapse collapse-animate show">
+                        <div class="inner-content">
+                            <div class="simple-content">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        指春天万物蓬勃生长、欣欣向荣；而繁荣兴盛的年代，也如盛放的繁花般美好。这两句是作者当时的感受，也是全文主旨所在：看到春光明媚、游人赏花的盛况，反映人民生活安定无忧，因此作者流露出积极乐观的思想，对未来充满信心与憧憬。
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="original-content" style="display:none;">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        這兩句話意思是：春天萬物生長，欣欣向榮；而繁榮興盛的年代，也像盛放的繁花般美好。“春光似海，盛世如花”正是作者當時的感受，也是本文寄意所在。作者看到春光明媚，繁花似海，遊人興致勃勃地賞花，反映人們生活安定無憂，因此不禁對當前的盛世發出讚頌，流露出積極樂觀的思想，對未來充滿信心和憧憬。
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 題目5：簡單灰邊捆邊 -->
+                <div class="question-card">
+                    <div class="q-header" data-collapse="q2-5">
+                        <span class="title-text">《醉翁亭記》全文寫了哪些“樂”？你是如何理解這些“樂”？各有什麼不同? 這裡用了甚麼修辭手法?達到甚麼效果?</span>
+                        <div class="controls">
+                            <button class="btn-switch unselectable" data-switch="q2-5">切換原版</button>
+                            <span class="toggle-icon rotated">￴</span>
+                        </div>
+                    </div>
+                    <div id="q2-5-content" class="q-body-collapse collapse-animate show">
+                        <div class="inner-content">
+                            <div class="simple-content">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        《醉翁亭记》写山水之乐、宴饮之乐、禽鸟之乐、游人之乐及太守之乐。前四者皆因外物而乐，太守之乐则因百姓安乐而乐，境界更高。這裡所用的是層遞法。運用這手法，給人層層遞進，一層深似一層的感覺，令人體味到太守之樂的層次最高。
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="original-content" style="display:none;">
+                                <table class="table custom-table">
+                                    <tr><td>
+                                        《醉翁亭记》写山水之乐、宴饮之乐、禽鸟之乐、游人之乐及太守之乐。前四者皆因外物而乐，太守之乐则因百姓安乐而乐，境界更高。這裡所用的是層遞法。運用這手法，給人層層遞進，一層深似一層的感覺，令人體味到太守之樂的層次最高。
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 測驗三面板 (預留) -->
+            <div class="content-panel" id="quiz3-panel">
+                <div class="empty-notice text-center py-5">
+                    <p class="text-secondary">🚧 測驗(一)內容正在錄入中...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>本网站仅为个人学习、展示使用，不用于商业用途。如有侵权，请联系删除。suggest@thetring.link
+            <!--<a href="mailto:suggest@thetring.link"target="_blank">suggest@thetring.link</a> -->
+        </p>
+    </div>
+
+    <script src="chinese_js.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        * {
+            touch-action: manipulation;
+        }
+    </style>
+    <script>
+        document.addEventListener('dblclick', e => e.preventDefault());
+    </script>
+
+</body>
+</html>
