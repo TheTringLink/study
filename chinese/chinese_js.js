@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 1. 背景切換 ---
     const toggleBtn = document.querySelector('.bg-toggle-btn');
     const overlay = document.querySelector('.white-bg-overlay');
-    let isWhite = true;
+    let isWhite = false;
     toggleBtn.addEventListener('click', () => {
         isWhite = !isWhite;
         overlay.style.display = isWhite ? 'block' : 'none';
