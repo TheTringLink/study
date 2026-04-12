@@ -336,12 +336,13 @@ body {
         <!-- 內容區域 -->
         <div class="info-content">
             <h3>📢 最新更新與公告</h3>
-            <p>1. 目前仅支持 ，中文/历史_问答 其余将在后续更新中增加<br>
-               2. 历史_问答 已更新，请进入查看<br>
-               3. 中文_问答 已更新，请进入查看<br>
-                <br>
+            <p>
+               1. 历史_问答 已更新，请进入查看<br>
+               2. 中文_问答 已更新，请进入查看<br>
+               3. 中文課文内容現已正式上綫，用戶可點擊“更多学习资料”進行閲讀
+                <hr />
                TIPS: 主页面右下角可暂停页面背景动画<br>
-               TIPS: 内容页面右上角可切换纯色背景<br> 
+               TIPS: 内容页面右上角可切换纯色背景<br>
             </p>
         </div>
     </div>
@@ -530,6 +531,7 @@ body {
     const routeMap = {
         'history_Q&A': './study/history.html',
         'chinese_Q&A': './chinese/chinese.html',
+        'chinese_more': './chinese/more/chinese_book.html',
     };
     const key = `${sub}_${cont}`;
     targetUrl = routeMap[key] || './black_page/no_page.html'; 
