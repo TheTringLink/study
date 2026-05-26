@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《孔乙己》 | SpaceX Style</title>
+    <link rel="stylesheet" href="chinese_book.css">
+</head>
+<body class="bg-active">
+    
+    <header class="top-nav">
+        <div class="nav-left">
+            <ul class="unit-list">
+                <li class="dropdown">
+                    <button class="dropbtn">《孔乙己》 ▼</button>
+                    <div class="dropdown-content">
+                        <a href="chinese_book.html">課文部分</a>
+                        <a href="unit2_practice.html"><font size="3">實務操作</font></a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">第二單元 ▼</button>
+                    <div class="dropdown-content">
+                        <button onclick="switchContent('part3')">數據分析</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="nav-right">
+            <button id="toggleBg" class="action-btn">隱藏背景</button>
+            <a href="https://example.com" class="nav-link">返回主頁</a>
+            <div class="dropdown">
+                <button class="dropbtn">下載內容 ▼</button>
+                <div class="dropdown-content">
+                    <a href="#" class="download-trigger">學習講義.pdf</a>
+                    <a href="#" class="download-trigger">課後作業.zip</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="notification" class="notification-toast">
+        <p>內容已更新</p>
+        <span class="en-sub">Content updated.</span>
+    </div>
+
+    <div class="main-container">
+        <aside class="side-nav">
+            <ul id="sidebar-list">
+                <li class="nav-item" data-target="section1"><a href="#section1">1 導引</a></li>
+                <li class="nav-item" data-target="section2">
+                    <a href="#section2">2 核心資料</a>
+                    <ul class="sub-nav">
+                        <li><a href="#section2-1">2.1 詳細內容</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" data-target="section3"><a href="#section3">3 自我檢測</a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <section id="section1">
+                <h2>1 導引</h2>
+                <p>SpaceX 風格強調簡約與高對比。嘗試在此處複製文字。背景圖片預設為顯示狀態。</p>
+            </section>
+
+            <section id="section2">
+                <h2>2 核心資料</h2>
+                <div id="section2-1">
+                    <h3>2.1 詳細內容</h3>
+                    <p>這裡是主要教學內容區域...</p>
+                </div>
+            </section>
+
+            <section id="section3">
+                <h2>3 自我檢測</h2>
+                <div class="quiz-item">
+                    <div class="quiz-header">
+                        <p>思考題：如何應用此模型？</p>
+                        <button class="toggle-answer">隱藏答案</button>
+                    </div>
+                    <div class="answer-box">
+                        <div class="answer-scroll-content">
+                            這裡是很長的答案內容...<br>
+                            為了測試滾動功能，我們需要多行文字。<br>
+                            1. 第一步：分析需求。<br>
+                            2. 第二步：建立模型。<br>
+                            3. 第三步：執行測試。<br>
+                            4. 第四步：優化結果。<br>
+                            這裡是答案的結尾。
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="disclaimer">
+            <p>本網站僅為個人學習、展示使用，不用於商業用途。如有侵權，請聯繫刪除。 suggest@thetring.link</p>
+            <p>Non-commercial use only. Contact suggest@thetring.link for removal.</p>
+        </div>
+        <div class="ai-credit">AI Generated</div>
+    </footer>
+
+    <script src="chinese_book.js"></script>
+</body>
+</html>
