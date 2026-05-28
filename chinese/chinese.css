@@ -48,9 +48,9 @@ body { margin: 0; padding-top: 90px; }
     background: rgba(0,0,0,0.03);
 }
 .nav-pill:hover { background: rgba(0,0,0,0.08); }
-.nav-pill.active { background: #333; color: white; }
+.nav-pill.active { background: #57a37d; color: white; }
 .nav-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: #999; }
-.nav-pill.active .dot { background: #56b74d; box-shadow: 0 0 8px #56b74d; }
+.nav-pill.active .dot { background: #97d891; box-shadow: 0 0 8px #a0d19c; }
 
 /* --- 下載下拉選單 --- */
 .nav-dropdown { position: relative; }
